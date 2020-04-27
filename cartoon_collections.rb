@@ -19,13 +19,12 @@ end
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
- filtered_snack = snacks.select do |snack|
+  snacks.find do |snack|
   
     if cheese_types.include?(snack)
       snack
     end  
   end
-  filtered_snack.first
   # iterate through array 
   # check if element is included in cheese array
   # if element is included return element
